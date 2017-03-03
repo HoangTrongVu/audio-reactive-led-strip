@@ -13,8 +13,8 @@
 #define PRINT_FPS 0
 
 // Wifi and socket settings
-const char* ssid     = "MOVISTAR_8884";
-const char* password = "x2pbUiPTMr5SRg6ydhBw";
+const char* ssid     = "***";
+const char* password = "***";
 unsigned int localPort = 7777;
 char packetBuffer[BUFFER_LEN];
 
