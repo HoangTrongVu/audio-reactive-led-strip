@@ -10,11 +10,11 @@
 // Maximum number of packets to hold in the buffer. Don't change this.
 #define BUFFER_LEN 1024
 // Toggles FPS output (1 = print FPS over serial, 0 = disable output)
-#define PRINT_FPS 1
+#define PRINT_FPS 0
 
 // Wifi and socket settings
-const char* ssid     = "YOUR_WIFI_SSID";
-const char* password = "YOUR_WIFI_PASSWORD";
+const char* ssid     = "MOVISTAR_8884";
+const char* password = "x2pbUiPTMr5SRg6ydhBw";
 unsigned int localPort = 7777;
 char packetBuffer[BUFFER_LEN];
 
@@ -25,14 +25,14 @@ WiFiUDP port;
 
 // Network information
 // IP must match the IP in config.py
-IPAddress ip(192, 168, 0, 150);
+//IPAddress ip(192, 168, 0, 150);
 // Set gateway to your router's gateway
-IPAddress gateway(192, 168, 0, 1);
-IPAddress subnet(255, 255, 255, 0);
+//IPAddress gateway(192, 168, 1, 1);
+//IPAddress subnet(255, 255, 255, 0);
 
 void setup() {
     Serial.begin(115200);
-    WiFi.config(ip, gateway, subnet);
+    //WiFi.config(ip, gateway, subnet);
     WiFi.begin(ssid, password);
     Serial.println("");
     // Connect to wifi and print the IP address over serial
